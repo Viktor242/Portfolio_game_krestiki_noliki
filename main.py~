@@ -3,7 +3,8 @@ from tkinter import messagebox
 
 root = tk.Tk()
 root.title("Крестики-нолики")
-root.geometry("300x300")
+game_board = tk.Canvas(root, width=300, height=300, bg="black")
+
 
 current_player = "X"
 buttons = []
